@@ -1,3 +1,6 @@
+S = int(input())
+d = int(input())
+
 def main(S, d):
     '''create a babylonian function.
     
@@ -8,4 +11,10 @@ def main(S, d):
     Returns:
         float: result
     '''
-    return
+    a = (S - (d**2))/(2*d)
+    b = a +d
+    x = b - (a**2)/(2*b)
+    return x
+
+result = main(S, d)
+print(result)
